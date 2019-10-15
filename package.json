@@ -1,0 +1,42 @@
+{
+  "name": "webpack_library",
+  "version": "0.1.0",
+  "description": "生成库的示例",
+  "main": "dist/webpack_library.js",
+  "scripts": {
+    "build": "webpack --env dev && webpack --env build && npm run test",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-register --colors -w ./test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shiminghua/webpack_library.git"
+  },
+  "keywords": [
+    "webpack",
+    "es6",
+    "webpack_library",
+    "library",
+    "umd"
+  ],
+  "author": "minghua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shiminghua/webpack_library/issues"
+  },
+  "homepage": "https://github.com/shiminghua/webpack_library",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.5.1",
+    "eslint-loader": "^3.0.2",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "yargs": "^14.2.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0"
+  }
+}
