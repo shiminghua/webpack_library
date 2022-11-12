@@ -33,7 +33,7 @@
     "eslint": "^6.5.1",
     "eslint-loader": "^3.0.2",
     "webpack": "^4.41.1",
-    "webpack-cli": "^3.3.9",
+    "webpack-cli": "^3.3.12",
     "yargs": "^14.2.0"
   },
   "dependencies": {
